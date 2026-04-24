@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mercedes-AMG Showroom | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-card">
+            <span>Mercedes-AMG</span>
+            <small>Loading showroom experience...</small>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo" href="index.html" aria-label="Mercedes-AMG homepage">Mercedes<span>-AMG</span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html" class="">About</a>
+            <a href="models.html" class="">Our Models</a>
+            <a href="gallery.html" class="">Gallery</a>
+            <a href="contact.html" class="">Contact</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Mercedes AMG hero section">
+            <div class="hero-slider">
+                <div class="slide active" style="background-image: url('images/whip1.jpg');"></div>
+                <div class="slide" style="background-image: url('images/MERCEDES-BENZ-AMG-GT.jpg');"></div>
+                <div class="slide" style="background-image: url('images/AMG-8.jpg');"></div>
+            </div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="section-tag">Luxury Performance Showroom</p>
+                <h1>Drive the <span>extraordinary.</span></h1>
+                <p>
+                    Explore Mercedes-AMG models built for power, elegance and a premium driving experience.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="models.html" class="btn btn-primary">Explore Models</a>
+                    <a href="contact.html" class="btn btn-soft">Book a Test Drive</a>
+                </div>
+            </div>
+
+            <div class="slide-arrows">
+                <button onclick="changeSlide(-1)" aria-label="Previous slide">‹</button>
+                <button onclick="changeSlide(1)" aria-label="Next slide">›</button>
+            </div>
+
+            <div class="slide-dots" id="slideDots" aria-label="Slide dots"></div>
+        </section>
+
+        <section class="luxury-band">
+            <div>
+                <span>01</span>
+                <strong>Handcrafted performance</strong>
+                <p>AMG engines, aggressive design and motorsport-inspired handling.</p>
+            </div>
+            <div>
+                <span>02</span>
+                <strong>Premium customer journey</strong>
+                <p>Clear model details, smooth gallery viewing and easy test-drive booking.</p>
+            </div>
+            <div>
+                <span>03</span>
+                <strong>Modern digital showroom</strong>
+                <p>A clean website experience designed for desktop, tablet and phone screens.</p>
+            </div>
+        </section>
+
+        <section class="showcase">
+            <div class="section-header">
+                <p class="section-tag">Featured Models</p>
+                <h2>Choose your AMG personality</h2>
+                <p>From daily luxury to track-level aggression, each model delivers a different kind of thrill.</p>
+            </div>
+
+            <div class="preview-grid">
+                <a href="models.html">
+                    <img src="images/MERCEDES-BENZ-AMG-GT.jpg" alt="Mercedes-AMG GT Coupe">
+                    <span>AMG GT Coupe</span>
+                </a>
+                <a href="models.html">
+                    <img src="images/Mercedes-amg-gle-63-s.jpg" alt="Mercedes-AMG GLE 63 S">
+                    <span>AMG GLE 63 S</span>
+                </a>
+                <a href="models.html">
+                    <img src="images/Mercedes-AMG C63 S E Performance.jpeg" alt="Mercedes-AMG C63 S E Performance">
+                    <span>AMG C63 S E</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="experience dark-split">
+            <div>
+                <p class="section-tag">Why this website works</p>
+                <h2>Fast, clean and easy to present.</h2>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Smooth navigation</h3>
+                    <p>All pages connect properly through a fixed navigation bar.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">🖼</span>
+                    <h3>Interactive gallery</h3>
+                    <p>Images open inside a lightbox with next and previous controls.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon">📩</span>
+                    <h3>Working form feel</h3>
+                    <p>The test-drive form gives a confirmation message after submission.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">Mercedes<span>-AMG</span></div>
+                <p>Luxury performance showroom concept for AMG customers in Gaborone.</p>
+                <div class="social-links" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="models.html">Models</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Models</h4>
+                <a href="models.html">AMG GT Coupe</a>
+                <a href="models.html">AMG GLE 63 S</a>
+                <a href="models.html">AMG C63 S E</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Visit</h4>
+                <p>
+                    Naledi Motors<br>
+                    Gaborone, Botswana<br>
+                    Mon–Fri: 8:00–18:00<br>
+                    Sat: 9:00–15:00
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Mercedes-AMG Showroom · Student Website Project</p>
+            <a href="contact.html">Book a test drive</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

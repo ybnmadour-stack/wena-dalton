@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery | Mercedes-AMG Showroom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-card">
+            <span>Mercedes-AMG</span>
+            <small>Loading showroom experience...</small>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo" href="index.html" aria-label="Mercedes-AMG homepage">Mercedes<span>-AMG</span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+            <a href="index.html" class="">Home</a>
+            <a href="about.html" class="">About</a>
+            <a href="models.html" class="">Our Models</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="contact.html" class="">Contact</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div id="lightbox" aria-hidden="true">
+        <button id="lightbox-close" aria-label="Close image preview">×</button>
+        <button id="lightbox-prev" aria-label="Previous image">‹</button>
+        <img src="" alt="Mercedes-AMG preview">
+        <button id="lightbox-next" aria-label="Next image">›</button>
+    </div>
+
+    <main>
+        <section class="page-hero gallery-hero">
+            <div>
+                <p class="section-tag">Visual Excellence</p>
+                <h1>Gallery</h1>
+                <p>Every angle tells a story of power, precision and AMG design.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/AMG-1.webp" alt="Mercedes-AMG gallery image 1" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-2.webp" alt="Mercedes-AMG gallery image 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-3.webp" alt="Mercedes-AMG gallery image 3" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-4.avif" alt="Mercedes-AMG gallery image 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-5.jpeg" alt="Mercedes-AMG gallery image 5" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-6.webp" alt="Mercedes-AMG gallery image 6" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-7.jpeg" alt="Mercedes-AMG gallery image 7" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-8.jpg" alt="Mercedes-AMG gallery image 8" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-9.webp" alt="Mercedes-AMG gallery image 9" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/AMG-10.webp" alt="Mercedes-AMG gallery image 10" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/whip2.jpg" alt="Mercedes-AMG gallery image 11" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/whip3.jpg" alt="Mercedes-AMG gallery image 12" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/whip4.jpg" alt="Mercedes-AMG gallery image 13" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/whip5.jpg" alt="Mercedes-AMG gallery image 14" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/whipA.jpg" alt="Mercedes-AMG gallery image 15" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">Mercedes<span>-AMG</span></div>
+                <p>Luxury performance showroom concept for AMG customers in Gaborone.</p>
+                <div class="social-links" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="models.html">Models</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Models</h4>
+                <a href="models.html">AMG GT Coupe</a>
+                <a href="models.html">AMG GLE 63 S</a>
+                <a href="models.html">AMG C63 S E</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Visit</h4>
+                <p>
+                    Naledi Motors<br>
+                    Gaborone, Botswana<br>
+                    Mon–Fri: 8:00–18:00<br>
+                    Sat: 9:00–15:00
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Mercedes-AMG Showroom · Student Website Project</p>
+            <a href="contact.html">Book a test drive</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

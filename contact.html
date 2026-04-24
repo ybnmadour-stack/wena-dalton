@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact | Mercedes-AMG Showroom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-card">
+            <span>Mercedes-AMG</span>
+            <small>Loading showroom experience...</small>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <a class="logo" href="index.html" aria-label="Mercedes-AMG homepage">Mercedes<span>-AMG</span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+            <a href="index.html" class="">Home</a>
+            <a href="about.html" class="">About</a>
+            <a href="models.html" class="">Our Models</a>
+            <a href="gallery.html" class="">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="page-hero contact-hero">
+            <div>
+                <p class="section-tag">Get In Touch</p>
+                <h1>Book Your Test Drive</h1>
+                <p>Submit your details and our AMG specialist will contact you within 24 hours.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-inner">
+                <div class="contact-info">
+                    <p class="section-tag">Visit Us</p>
+                    <h2>Experience AMG firsthand.</h2>
+                    <p>Choose your preferred model and date. The form gives a clear confirmation after submission.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item"><span>📍</span><span>Naledi Motors, Gaborone</span></div>
+                        <div class="contact-item"><span>📞</span><span>+267 390 0000</span></div>
+                        <div class="contact-item"><span>✉️</span><span>info@mercedesamg-showroom.bac.ac.bw</span></div>
+                        <div class="contact-item"><span>🕐</span><span>Mon–Sat: 8:00 AM – 6:00 PM</span></div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <form id="testDriveForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input id="fullName" type="text" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input id="email" type="email" placeholder="yourname@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" type="tel" placeholder="+267 7X XXX XXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Preferred Model</label>
+                                <select id="model" required>
+                                    <option value="">Select a Model</option>
+                                    <option>AMG GT Coupe</option>
+                                    <option>AMG GLE 63 S</option>
+                                    <option>AMG C63 S E Performance</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input id="date" type="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Any special requests..." rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full">Submit Request</button>
+                    </form>
+
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Request Submitted!</h3>
+                        <p>We will contact you within 24 hours.</p>
+                        <button class="btn btn-soft" onclick="location.reload()">Send Another Request</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-card">
+                <div class="map-placeholder">
+                    <div>
+                        <strong>Naledi Motors</strong><br>
+                        Gaborone, Botswana<br>
+                        <small>Map placeholder for showroom location</small>
+                    </div>
+                </div>
+                <div class="map-info">
+                    <h3>Opening Hours</h3>
+                    <p>
+                        Monday–Friday: 8:00–18:00<br>
+                        Saturday: 9:00–15:00<br>
+                        Sunday: Closed
+                    </p>
+                    <p>Customers can use this section to quickly check availability before booking a test drive.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">Mercedes<span>-AMG</span></div>
+                <p>Luxury performance showroom concept for AMG customers in Gaborone.</p>
+                <div class="social-links" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="models.html">Models</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Models</h4>
+                <a href="models.html">AMG GT Coupe</a>
+                <a href="models.html">AMG GLE 63 S</a>
+                <a href="models.html">AMG C63 S E</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Visit</h4>
+                <p>
+                    Naledi Motors<br>
+                    Gaborone, Botswana<br>
+                    Mon–Fri: 8:00–18:00<br>
+                    Sat: 9:00–15:00
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Mercedes-AMG Showroom · Student Website Project</p>
+            <a href="contact.html">Book a test drive</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
